@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+h1,h2,h3,h4,h5,h6 {
+    color:black;
+    font-family: 'Ubuntu', Calibri, 'Gill Sans', sans-serif;
+}
+p {
+    font-family: Calibri, 'Gill Sans', sans-serif;
+}
+
+button{
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: transparent;
+    transition: ease 0.3s;
+}
+button:hover{
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: lightgrey;
+}
