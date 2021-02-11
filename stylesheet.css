@@ -8,18 +8,56 @@ p {
     font-family: Calibri, 'Gill Sans', sans-serif;
 }
 
-button{
+.ref {
+    /*border: 1px solid rgb(134, 187, 236);
+    border-radius: 4px;*/
+    font-family: 'Ubuntu', Calibri, 'Gill Sans', sans-serif;
+    color: rgb(86, 163, 235);
+    text-decoration:none;
+    position: relative;
+    /*padding: 2px 4px;*/
+}
+.ref:hover {
+    color: rgb(86, 163, 235)
+}
+.ref::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:rgb(86, 163, 235);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition:all .5s cubic-bezier(1,.25,0,.75) 0s;
+    left:0;
+}
+.ref:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+    left:0;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    transition: ease 0.3s;
+    font-family: 'Ubuntu', Calibri, 'Gill Sans', sans-serif;
+}
+
+button.visible{
     margin-top: 20px;
     border: 1px solid black;
     border-radius: 4px;
     display: inline-block;
     background-color: transparent;
-    transition: ease 0.3s;
 }
-button:hover{
+button.visible:hover{
     border: 1px solid black;
     border-radius: 4px;
-    background-color: lightgrey;
+    background-color: rgba(134,236,231,0.7);
 }
 
 ul {
@@ -29,51 +67,46 @@ ul {
     overflow: hidden;
     position: fixed;
     top: 0;
-    right: 0px;
+    right: 0;
     width: 100%;
-    background-color: #A9D3F9;
+    background-color: rgb(166, 158, 190); /* #A9D3F9;*/
+    font-family: 'Ubuntu', Calibri, sans-serif;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
 }
+
 li {
-    float: left;
+    float: right;
   }
-  
+
+.name {
+    float: left;
+    font-size: 20px;
+    padding: 10px 14px;
+    color: white;
+    text-decoration: none;
+}
   li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: ease-in-out 0.4s;
+
   }
   
   li a:hover:not(.active) {
-    background-color: #0b75d8;
+    /*background-color: #6aa9e4;*/
+    background-color: rgba(134,236,231,0.7); /*#86ece7*/
+    transition: ease-in-out 0.4s;
   }
   
-  .active {
-    background-color: #6aa9e4;
+  li a.active {
+    background-color: rgba(255, 205, 238, 0.7); /*#86ece7*/
   }
-/*
-.navbar {
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index:100;
-    background-color: #A9D3F9; /*a9f9e6*/
-    /*box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.5);
-}
-
-.navbar a{
-    float: left;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    padding: 20px 16px;
-    vertical-align: middle;
-    transition: 0.4s;
-}*/
 
 .container {
     padding-top: 65px;
