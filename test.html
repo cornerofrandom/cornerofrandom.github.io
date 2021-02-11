@@ -2,9 +2,9 @@
 <html>
 <body>
 
-<div contenteditable="true" id="edited">edit me</div>
+<div contenteditable="true" id="print">edit me</div>
 
-<div id="result">nothing was here yeet</div>
+<div id="result">not edited yet.</div>
 
 <script>
 function storageAvailable(type) {
@@ -21,9 +21,10 @@ function storageAvailable(type) {
     }
 }
 
-editableDiv = document.getElementById("edited"); // get the editable div
+//editableDiv = document.getElementById("edited"); // get the editable div
+editableDiv = document.getElementById("print"); // get the editable div
 
-editableDiv.addEventListener("onchange", function() { // this function will be executed whenever the content of the editableDiv changes
+editableDiv.addEventListener("change", function() { // this function will be executed whenever the content of the editableDiv changes
     if (storageAvailable("localStorage")) { // check for storage availability
         divcontent = editableDiv.innerHTML; // get contents of the editableDiv
         window.localStorage.setItem("divcontent", divcontent); // add them to the localStorage
@@ -31,13 +32,13 @@ editableDiv.addEventListener("onchange", function() { // this function will be e
         alert("Your browser does not support localStorage or you disabled it, the things you entered could not be saved !");
     }
 });
-editableDiv = document.getElementById("edited"); // get the editable div
+
+editableDiv = document.getElementById("print"); // get the editable div
 
 
-window.addEventListener("onload", function() { // this function is executed whenever the page is loaded
+window.addEventListener("load", function() { // this function is executed whenever the page is loaded
     if (storageAvailable("localStorage")) { // check for storage availability
         divcontent = window.localStorage.getItem("divcontent"); // get the saved divcontent
-
         if (divcontent === null) { // if the user never modified the divcontent before (or cleaned his localStorage), do nothing
         } else {
             editableDiv.innerHTML = divcontent; // write it into the editableDiv
@@ -46,9 +47,7 @@ window.addEventListener("onload", function() { // this function is executed when
         alert("Your browser does not support localStorage or you disabled it, your previous work could not be restored !");
     }
 });
-
 </script>
 
 </body>
 </html>
-
