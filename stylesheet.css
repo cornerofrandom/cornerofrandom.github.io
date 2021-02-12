@@ -60,7 +60,30 @@ button.visible:hover{
     background-color: rgba(134,236,231,0.7);
     
 }*/
-button {
+button{
+    border: 0px transparent;
+    background-color: transparent;
+    outline: 0px transparent;
+}
+button.visible{
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: transparent;
+    transition: ease 0.3s;
+}
+button.visible:hover{
+    background-color: lightgrey;
+}
+button.unrh{
+    border: 0px solid transparent;
+    background-color: transparent;
+}
+button.unrh:hover{
+    background-color: transparent;
+}
+/*button {
     background-color: transparent;
     border:none;
     outline: none;
@@ -92,7 +115,7 @@ button:hover::before {
     visibility: visible;
     transform: scaleX(1);
     left:0;
-}
+}*/
 ul {
     list-style-type: none;
     margin: 0;
