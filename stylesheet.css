@@ -133,7 +133,8 @@ li {
   
   li a:hover:not(.active) {
     /*background-color: #6aa9e4;*/
-    background-color: rgba(134,236,231,0.7); /*#86ece7*/
+    /*background-color: rgba(134,236,231,0.7); /*#86ece7*/
+    background-color: rgba(252, 172, 182, 0.7);
     transition: ease-in-out 0.4s;
   }
   
