@@ -31,7 +31,7 @@
                 <br><br> <strong>tl;dr</strong> Save and reload if the print function doesn't work. Mobile users, just screenshot.
             </p>-->
             <p>I broke the print function ;-; so for now, once you're done, just screenshot the biocard. If you're not done, and wish to edit later, make sure you save your work. 
-                <br><br> Delete the placeholder text, and type in your information.
+                <br><br> Delete the placeholder text, and type in your information. <br>
             </p>
 
             <!--<div id="print" style="border-color: transparent; padding: 5px 10px;">
@@ -63,16 +63,23 @@
                             <p contenteditable="true" id="about">Something about you.....<br><em style="color:rgb(96, 96, 126); font-size:11px;">this box will grow larger if you type more!</em></p>
                         </div>
                     </form>
-
                     
             </div>   
+            <p>replace the text below with a valid hex code (with the # in front) and click the 'Custom Color' button below to change the card to a custom color.</p>
+            <center>
+                <p contenteditable="true" id="ccc">e.g., #c0cbff</p>
+                <button onclick="ccf();">Custom Color</button><br><br>
+                <p>alternatively, you can choose a color from several presets. <br>click 'save' to save your work and come back to it later. <br>(colors will not be saved and you will have to enter/change them again next time)</p>
+                <button onclick="changeColor();">Change Color</button>
+                <button onclick="save();">Save</button>
+                </center>
             </div>
-        </div>
-        <button onclick="changeColor();">Change Color</button>
-        <button onclick="save();">Save</button>
+            
+
+
         <br><br>
 
-        <p style="font-family: 'Ubuntu', Calibri, 'Gill Sans', sans-serif;" id="sStatus">save info</p>
+        <p style="font-family: 'Ubuntu', Calibri, 'Gill Sans', sans-serif;" id="sStatus"><span style="color: red;"><strong>your browser is not compatible with this website. please switch to google chrome and try again.</strong></span></p>
         <!--<button onclick="print();">Print</button>-->
         <button onclick="reset();">Reset Card</button>
         <br><br><br>
