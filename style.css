@@ -72,7 +72,11 @@ input[type=text], select{
 #desc:focus{
     border-bottom: 3px solid rgb(166, 158, 190);
 }
+#ccc {
+    width: 75px;
+}
 .boxlefttext{
+    z-index: 0;
     width: 100%; 
     padding-top: 5px;
     padding-bottom: 5px;
@@ -136,6 +140,7 @@ button:hover{
     background-color: lightgrey;
 }
 ul {
+    z-index: 1;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -143,6 +148,7 @@ ul {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 100;
     width: 100%;
     background-color: rgb(166, 158, 190); /* #A9D3F9;*/
     font-family: 'Ubuntu', Calibri, sans-serif;
