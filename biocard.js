@@ -81,7 +81,7 @@ function save() { // this function will be executed whenever the content of the 
         window.localStorage.setItem("about", about);
 
         var d = new Date()
-        document.getElementById("sStatus").innerHTML="saved <br>"+d;
+        document.getElementById("sStatus").innerHTML="<span style='color: green'>saved.</span> <br>"+d;
     } else { // if localStorage is not supported, notify the user about it
         alert("Error saving: your browser does not support localStorage, or it was disabled.");
     }
@@ -108,7 +108,7 @@ function save() { // this function will be executed whenever the content of the 
 
         if (uname === null) { // if the user never modified the divcontent before (or cleaned his localStorage), do nothing
             var d = new Date()
-        document.getElementById("sStatus").innerHTML="no saved data. <br>" +d;
+        document.getElementById("sStatus").innerHTML="<span style='color: red'>no saved data.</span> <br>" +d;
         } else {
             nameDiv.innerHTML = uname; // write it into the editableDiv
             descDiv.innerHTML = desc;
@@ -117,16 +117,16 @@ function save() { // this function will be executed whenever the content of the 
             dlDiv.innerHTML = dl;
             aboutDiv.innerHTML = about;
             var d = new Date()
-        document.getElementById("sStatus").innerHTML="saved data was loaded. <br>" + d;
+        document.getElementById("sStatus").innerHTML="<span style='color: green'>saved data was loaded.</span> <br>" + d;
         }
     } else { // if strorage not available, notify the user
-        alert("Your browser does not support localStorage or you disabled it, your previous work could not be restored !");
+        alert("local storage is not available on your browser.");
     }
  }
 
  function reset() {
 
-    let reset = confirm("This will delete all of your saved data. Are you sure you want to proceed?");
+    let reset = confirm("This will delete all of your saved data. Deleted data is irretrievable. Are you sure you want to proceed?");
     if (reset){
         localStorage.clear();
         location.reload();
@@ -134,5 +134,15 @@ function save() { // this function will be executed whenever the content of the 
     }
     else {
         return;
+    }
+ }
+
+ function ccf(){
+    var col = document.getElementById("print");
+    var colorcode = document.getElementById("ccc");
+    var hex = colorcode.innerHTML;
+    try {col.style.backgroundColor = `${hex}`;}
+    catch {
+        alert('the color you entered was invalid, please try again and make sure you put # before your hex code!')
     }
  }
