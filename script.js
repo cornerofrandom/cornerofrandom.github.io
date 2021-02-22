@@ -26,4 +26,11 @@ function alrt(){
     alert("ATTENTION: you are entering a corner of random. Beware of extreme levels of randomness. You have been warned...")
 }
 
+//canvas
+draw=function(){
+    stroke(mouseX, 0, mouseY);
+    fill(mouseX,mouseY,mouseX+mouseY)
+    ellipse(mouseX, mouseY, mouseX/5, mouseX/5);
+    
+}
 

@@ -3,28 +3,29 @@
     <head>
         <title>corner of random</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel='stylesheet' href='satisfy.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>#home{background-color: rgba(255, 205, 238, 0.7);}</style>
     </head>
     <body>
-        <ul>
-            <a class="name" href="">corner of random</a>        
-            <li><a href="https://cornerofrandom.github.io/error">random page</a></li>
-            <li><a href="https://cornerofrandom.github.io/about">about</a></li>
-            <li><a href="https://cornerofrandom.github.io/biocard">biomaker</a></li>
-            <li><a class="active" href="">home</a></li>
-
-        </ul>
+        <div id="navbar"></div>
+        <script src = "navbar.js"></script>
         <center>
             <div class="container">
                 <h2>welcome to the corner of random</h2>
-                <p>This is possibly the most useless website on Earth. Click around to <del>waste your time</del> <em>ahem</em>, I mean<em> entertain yourself</em>.</p>
+                <p>This is possibly the most useless website on Earth. Click around to <del>waste your time</del> <em>ahem</em>, I mean<em> entertain yourself</em>.
+                <br><br> please note that some of these will only work on computer.</p>
                 <p id="changeme">A paragraph.</p>
                 <button class="visible" onclick="change()" id="changebtn">Change the paragraph</button>
                 <button class="visible" onclick="changeback()" id="changeback">Change back</button>
                 <button class="visible" onclick="unr()" id="unrb">Unicorns & Rainbows</button>
                 <button onclick="unrh()" id="unrh"><img src="unicornsnrainbows.jpg" id="unr"></button>
+                <p></p>
+                <div class='sqircles'>
+                    <div class='sqircle' onclick='sqircleclick()'></div>
+                </div>
             </div>
         </center>
-        
         
         <script src="script.js"></script>
 
