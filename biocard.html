@@ -1,87 +1,105 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>BioCard Maker</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!--for formatting the biocard-->
-        <style>#biomaker{background-color: rgba(255, 205, 238, 0.7);}</style>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>BioCard Maker</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--format the navbar-->
+    <style>
+        #biomaker {
+            background-color: rgba(255, 205, 238, 0.7);
+        }
+    </style>
 </head>
-    <body onload="retrieve()">
+
+<body onload="retrieve()">
+    <div class="container">
         <div id="navbar"></div>
-        <script src = "navbar.js"></script>
+        <script src="navbar.js"></script>
         <center>
-        <div class='container'>
-            <h2>biocard maker</h2>
-            <p>Previously hosted on a different website, tLdbm's biomaker is now here on the cornerofrandom webpage.</p>
-            <h3>tLdbm biocard maker instructions</h5>
-            <!--<p>Fill in the biocard maker with your information, and change the color to your liking. Clicking the print button once you're done will open the card as an image in another tab. 
-                <br><br> Note: due to html2canvas being kind of weird, the <strong>"printed" image will sometimes disply weirdly</strong>. If this happens, save your work using the save button below, then reload the site and try again.
-                <br><br> Mobile users: the site is not yet optimised for mobile use (the "print" button doesn't function properly). If you don't have access to a computer to use this on, you'll have to screenshot and crop your card to save it.
-                <br><br> Use chrome for best results. Clearing browser cache will result in lost data.  
-                <br><br> <strong>tl;dr</strong> Save and reload if the print function doesn't work. Mobile users, just screenshot.
-            </p>-->
-            <p>I broke the print function ;-; so for now, once you're done, just screenshot the biocard. If you're not done, and wish to edit later, make sure you save your work. 
-                <br><br> Delete the placeholder text, and type in your information. <br>
-            </p>
+            <div id="main">
+                <h2>Biocard Maker</h2>
+                <p>Welcome to the bio-card maker.
+                    <br>You can open the sidebar for more advanced options.<br>
+                    An auto-save option is currently in beta testing.
+                    For now, please select the 'save' option in the save menu to save your work.
+                </p>
+                <div class="profileoutline" id="print">
+                        <center>
+                            <div contenteditable id='name' spellcheck='false'>E.g. Erinna</div>
+                            <div contenteditable id="desc" spellcheck='false'>E.g. She/Her/Hers</div>
+                        </center>
 
-            <!--<div id="print" style="border-color: transparent; padding: 5px 10px;">
-            --><div class="profileoutline" id="print">
-                <form>
-                    
-                    
-                    <center>     
-                        <div contenteditable='true' id='name' spellcheck='false'>E.g. Erinna</div>               
-                        <!--<input type="text" id="name" placeholder="E.g. Erinna" spellcheck="false">-->
-                        <div contenteditable="true" id="desc" spellcheck='false'>E.g. She/Her/Hers</div>
-                    </center>
-
-                    <br>
-                    <!--the profile card-->
+                        <br>
+                        <!--the profile card-->
                         <div class="col-xs-5 col-sm-5 col-lg-5" spellcheck="false">
                             <div class="box">
-                                &nbsp&nbsp&nbsp&nbsp Birthday
-                                <p contenteditable="true" class="boxlefttext" id="birthday">E.g. January 1st, 2020</p>
-                               <br>
+                                <div id="boxBD">
+                                    &nbsp&nbsp&nbsp&nbsp Birthday
+                                    <p contenteditable class="boxlefttext" id="birthday">E.g. January 1st, 2020
+                                    </p>
+                                </div>
+                                <br>
                                 &nbsp&nbsp&nbsp&nbsp Likes
-                               <p contenteditable="true" class="boxlefttext" id="likes">-Something you like <br> -Something you like</p>
-                               <br>
-                               &nbsp&nbsp&nbsp&nbsp Dislikes
-                               <p contenteditable="true" class="boxlefttext" id="dislikes">-Something you dislike <br> -Something you dislike</p>
+                                <p contenteditable class="boxlefttext" id="likes">-Something you like <br>
+                                    -Something you like</p>
+                                <br>
+                                &nbsp&nbsp&nbsp&nbsp Dislikes
+                                <p contenteditable class="boxlefttext" id="dislikes">-Something you dislike <br>
+                                    -Something you dislike</p>
                             </div>
                         </div>
-                        <div class="col-xs-7 col-sm-7 col-lg-7" style="text-align:justify; font-size: 12px;" spellcheck="false">
-                            <p contenteditable="true" id="about">Something about you.....<br><em style="color:rgb(96, 96, 126); font-size:11px;">this box will grow larger if you type more!</em></p>
+                        <div class="col-xs-7 col-sm-7 col-lg-7" style="text-align:justify; font-size: 12px;"
+                            spellcheck="false">
+                            <p contenteditable id="about">Something about
+                                you.....<br><br><br><br><br><br><br><br><br><em style="color:rgb(96, 96, 126); font-size:11px;">this box will grow larger if you
+                                    type more!</em></p>
+
                         </div>
-                    </form>
-                    
-            </div>   
-            <p>replace the text below with a valid hex code (with the # in front) and click the 'Custom Color' button below to change the card to a custom color.</p>
-            <center>
-                <p contenteditable="true" id="ccc">e.g., #c0cbff</p>
-                <button onclick="ccf();">Custom Color</button><br><br>
-                <p>alternatively, you can choose a color from several presets. <br>click 'save' to save your work and come back to it later. <br>(colors will not be saved and you will have to enter/change them again next time)</p>
-                <button onclick="changeColor();">Change Color</button>
-                <button onclick="save();">Save</button>
-                </center>
+                </div>
             </div>
-            
+            <button id="sidebarO" onclick="openNav()">&#60;&nbsp;</button>
+            <div id="sidebar">
+
+                <label for="close" style="font-size: 16px; margin-top: 5px;">Biomaker Settings</label>
+                <button onclick="closeNav()" id="close">&times;</button>
+                <br>
+                <str style="font-weight: bold;">Color</str><br>
+
+                <label for="colorpicker" id="label">Custom Color</label>
+                <input type="color" id="colorpicker" value="#FFFFFF"><br>
+                <button onclick="changeColor();">Preset Colors</button>
+                <p id="cardColor"></p>
+                <br><br>
+                <!--<button onclick="hideBD();">Hide Birthday</button>-->
+                <button onclick="reset();">Reset Card</button>
+                <br>
+                <p style="font-family: Calibri,sans-serif; font-size: 9px; margin-top: 5px;"> Designed and made by
+                    @erinna#5448</p>
+
+            </div>
+            <div id="saveMenu">
+                <str style="font-weight: bold;">Save Status</str><br>
+                
+                <p id="sStatus"><span style="color: red;"><strong>Your browser does not allow for items to be saved.
+                            Please try using Google Chrome instead.</strong></span></p>
+                <p id="date"></p>
+
+                <!--<button onclick="save();">Save</button>-->
+
+            </div>
+            <br><br>
+
+    </div>
+    </center>
+
+    <script src="html2canvas.min.js"></script>
+    <script src="biocard.js"></script>
+    <script src="color.js"></script>
 
 
-        <br><br>
+</body>
 
-        <p style="font-family: 'Ubuntu', Calibri, 'Gill Sans', sans-serif;" id="sStatus"><span style="color: red;"><strong>your browser is not compatible with this website. please switch to google chrome and try again.</strong></span></p>
-        <!--<button onclick="print();">Print</button>-->
-        <button onclick="reset();">Reset Card</button>
-        <br><br><br>
-
-        <p style="font-family: 'Noto Sans JP', Calibri,sans-serif; font-size: 10px"> Designed and made by @waclyu#5448, with special thanks to @Ethiera#7969</p>
-    </center>  
-    
-    <script src="html2canvas.min.js"></script> 
-    <script src="biocard.js"></script> 
-
-
-    </body>
 </html>
