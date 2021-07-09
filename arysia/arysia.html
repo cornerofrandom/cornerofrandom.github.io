@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="text.css">
 <link rel="stylesheet" href="animate2.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 <body onload="checkVisitor()">
    <p id="length1"></p>
@@ -196,12 +197,25 @@
             <p><em>There may not be much to explore now, as content is still being added as this website expands.
                   If you return later, there may yet be more for you to explore.</em>
             </p>
-            <a href="#magicInfo"><img src="magicLight.svg" id="magicLight" onclick="displayMagicInfo();"></a>
+               <!--<div class="col-xs-4 col-sm-4 col-md-4">-->
+                  <div>
+                     <a href="#magicInfo"  style="left:0;"><img src="magicLight.svg" class="imgLink" onclick="displayMagicInfo();"></a>
+                  </div>
+               <!--</div>-->
+
+               <!--<div class="col-xs-4 col-sm-4 col-md-4">
+                  <a href="#nationsInfo"><img src="nations.svg" class="imgLink" onclick="displayNationsInfo();"></a>
+               </div>
+
+               <div class="col-xs-4 col-sm-4 col-md-4">
+               
+               </div> -->
          </div>
 
-
-
-
+      </div>
+      <div id="tooSmall" class="inactive">
+        Your screen is too small! <br><br> This website is optimized for large screens (computers and tablets). A mobile-friendly version is still under development.
+         <br><br> Thanks for your visit. If you'd like to explore, please use a larger screen. <br>&lt;3
       </div>
       <div id="magicInfo" class="inactive">
          <svg 
@@ -209,7 +223,7 @@
          height="30mm"
          viewBox="0 0 30 30"
          version="1.1"
-         id="svg5"
+         id="magicSvg"
          inkscape:version="1.1 (c68e22c387, 2021-05-23)"
          sodipodi:docname="magic.svg"
          xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -365,7 +379,55 @@
              sodipodi:nodetypes="cc" />
          </g>
          </svg>
-      </div>
+         <div class="text">
+            <p class="title">Arysian Magic</p>
+            <p>There are two types of Arysian magic: that of the Allenora, and that of the Firin.</p>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+               <div style="float: right; text-align: right;">
+                  <p class="title">Allenora</p>
+                  <p>The Allenora rely purely on theory and knowledge, leaving very little to talent. Many of the 
+                     skilled Allenora are unable to or very weak in the Firin magics. It is possible for anyone to learn 
+                     the ways of the Allenora; however, one must be very patient. 
+                     To succeed, one must endlessly seek to better themselves and their magics.
+                  </p>
+               </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+               <div style="float: left; text-align: left;">
+                  <p class="title">Firin</p>
+                  <p>The Firin are quite different from their austere counterparts. Firin magic relies heavily on 
+                     inborn talent. As such, achieving mastery of the Firin magics is rare; one must not only be born with 
+                     an affinity for the magics, but also willing to work hard. The Firin primarily use 
+                     the natural world and their innate power to use their magics.
+                  </p>
+               </div>
+            </div>
+            <a href="#"><img src="arysia.svg" class="imgLink" onclick="displayHome();"></a>
+        </div>
+          </div>
+          <div id="nationsInfo" class="inactive">
+            
+            <!--COPY AND PASTE SVG HERE-->
+            <div class="text">
+               <p class="title">Arysian Nations</p>
+               <p>There are six Arysian nations, scattered across the continent.</p>
+               <div class="col-xs-6 col-sm-6 col-md-6">
+                  <div style="float: right; text-align: right;">
+                     <p class="title">Allenora</p>
+                     <p>flmsld
+                     </p>
+                  </div>
+               </div>
+               <div class="col-xs-6 col-sm-6 col-md-6">
+                  <div style="float: left; text-align: left;">
+                     <p class="title">Firin</p>
+                     <p>asdfiapsdhf;oais
+                     </p>
+                  </div>
+               </div>
+               <a href="#"><img src="arysia.svg" class="imgLink" onclick="displayHome();"></a>
+           </div>
+             </div>
 
       <div id="challenge">
          <p>You are trying to access something that is not yet available to the public. What have you to say for
