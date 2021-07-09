@@ -51,7 +51,7 @@ setTimeout(() => {
     main.style.opacity = "1";
     current.classList.add("inactive");
     current.classList.remove("active");
-    main.className="active";
+    main.classList.add("active");
     main.classList.remove("inactive");
   }, 50);
 }, delayTime);

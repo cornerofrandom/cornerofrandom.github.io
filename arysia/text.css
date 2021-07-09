@@ -6,6 +6,12 @@
   #main{
     display: none;
   }
+  #magicInfo{
+    display: none;
+  }
+  .website{
+    display: none !important;
+  }
   #tooSmall{
     opacity: 1;
     color: white;
@@ -13,6 +19,30 @@
     display:inline-flex;
     text-align: center;
     vertical-align: center;
+  }
+}
+@media screen and (max-device-width:500px){
+.website{
+  display: none !important;
+}
+  #tooSmall{
+    opacity: 1;
+    color: white;
+    font-size: 5em;
+    display:inline-flex;
+    text-align: center;
+    vertical-align: center;
+  }
+}
+@media screen and ( max-device-height:500px){
+  .website{
+    display: none !important;
+  } #tooSmall{    opacity: 1;
+    color: white;
+    display:inline-flex;
+    text-align: center;
+    vertical-align: center;
+    font-size: 2em;
   }
 }
 .understandingArysia { position:relative;height: auto; width:75%; z-index: 2; top: -50px; min-width: 350px;}

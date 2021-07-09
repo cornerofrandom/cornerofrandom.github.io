@@ -1,3 +1,7 @@
+var challenge = document.getElementById("challenge");
+var main = document.getElementById("main");
+var magicInfo = document.getElementById("magicInfo");
+
 function storageAvailable(type) {
     var storage;
     try {
@@ -15,14 +19,37 @@ function checkVisitor(){
     if (storageAvailable("localStorage")) {
         pass = window.localStorage.getItem("Arysia_KEY");
         if (pass === "PASSED"){
-            document.getElementById("challenge").className = "inactive";
-            document.getElementById("main").className = "active";
+            window.alert("PASS")
+            challenge.className="inactive";
             checkPage();
             //window.alert("Welcome back.");
         }
     }
 }
+function checkPage(){
+    if(window.location.hash){
+        var hash = window.location.hash;
+        window.alert(hash);
+        if (hash === "#magicInfo"){
+            window.alert("magic")
+            main.classList.add("inactive");
+            main.classList.remove("active");
+            magicInfo.classList.add("active");
+            magicInfo.classList.remove("inactive");
+        } else {
+            main.classList.add("active");
+            main.classList.remove("inactive");
+        }
+        }
+        else {
+            window.alert("MAIN")
+            main.classList.add("active");
+            main.classList.remove("inactive");
+    }
+}
+
 document.getElementById("editor").addEventListener("input", function() {
+
     entered = document.getElementById("editor").innerHTML;
     if (entered === "pain"){
         document.getElementById("edited").innerHTML = "lol, yeah same."
@@ -34,8 +61,9 @@ document.getElementById("editor").addEventListener("input", function() {
         document.getElementById("edited").innerHTML = "at this point you're just putting in random crap aren't you?"
     } 
     else if (entered === "FHAmeris7"){
-        document.getElementById("challenge").className="inactive";
-        document.getElementById("main").className="active";
+        challenge.className="inactive";
+        main.classList.add("active");
+        main.classList.remove("inactive");
         window.alert("Welcome");
         if (storageAvailable("localStorage")) {
         window.localStorage.setItem("Arysia_KEY", "PASSED");
@@ -48,16 +76,3 @@ document.getElementById("editor").addEventListener("input", function() {
 
 }, false);
 5
-function checkPage(){
-    if(window.location.hash){
-        var hash = window.location.hash.substring(1);
-        if (hash === "magicInfo"){
-            document.getElementById("main").className="inactive";
-            document.getElementById("magicInfo").className="active";
-        }
-        else {
-            document.getElementById("challenge").className = "inactive";
-            document.getElementById("main").className = "active";
-        }
-    }
-}
