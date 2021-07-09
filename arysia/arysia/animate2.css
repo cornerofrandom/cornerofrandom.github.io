@@ -1,0 +1,111 @@
+.largeCircle {
+    stroke-dasharray: 314.2034912109375;
+    stroke-dashoffset: 314.2034912109375;
+    animation: draw 2.2s linear forwards;
+  }
+  .smCirLeft {
+    stroke-dasharray: 188.52210998535156;
+    stroke-dashoffset: 188.52210998535156;
+    animation: draw 1s linear forwards;
+  }
+  .smCirRight {
+    stroke-dasharray: 188.52210998535156;
+    stroke-dashoffset: 188.52210998535156;
+    animation: draw 0.5s linear forwards;
+  }
+  .rhombus{
+    stroke-dasharray: 213.86093139648438;
+    stroke-dashoffset: 213.86093139648438;
+    animation: draw 1.5s linear forwards;
+  }
+
+  .squiggle{
+    stroke-dasharray: 101.64131927490234;
+    stroke-dashoffset: 101.64131927490234;
+    animation: draw 1.75s linear forwards;
+  }
+
+  @keyframes draw{
+      to {
+          stroke-dashoffset: 0;
+      }
+  }
+
+
+  #arysia {
+      float: center;
+  }
+
+
+
+
+  #svg-wrapper{
+    visibility: block;
+    width:30mm;
+    height: 30mm;
+    border-radius: 50%;
+}
+#svg2-wrapper{
+    visibility: block;
+    background-color: black;
+    top: -20px;
+    width:30mm;
+    height: 30mm;
+    border-radius: 50%;
+}
+#gold{
+    display: none;
+    transition: display 1s linear;
+    animation: fadeIn ease-in-out 0.3s;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:0.7;
+    }
+}  
+.main1, .main2{
+    stroke-dasharray: 22.822349548339844;
+    stroke-dashoffset: 22.822349548339844;
+    animation: draw 1s linear forwards;
+  }
+.sCirLeft {
+    stroke-dasharray: 12.076722145080566;
+    stroke-dashoffset: 12.076722145080566;
+    animation: draw 0.7s linear forwards;
+}
+.sCirRight {
+    stroke-dasharray: 12.076722145080566;
+    stroke-dashoffset: 12.076722145080566;
+    animation: draw 1s linear forwards;
+}
+
+.lCir {
+    stroke-dasharray: 28.933956146240234;
+    stroke-dashoffset: 28.933956146240234;
+    animation: draw 0.5s linear forwards;
+}
+.top{
+    stroke-dasharray: 4.849679946899414;
+    stroke-dashoffset: 4.849679946899414;
+    animation: draw 0.7s linear forwards;
+}
+.horizontal{
+    stroke-dasharray: 7.24799919128418;
+    stroke-dashoffset: 7.24799919128418;
+    animation: draw 1.3s linear forwards;
+}
+
+.lHorizontal{
+    stroke-dasharray: 7.24799919128418;
+    stroke-dashoffset: 7.24799919128418;
+    animation: draw 0.7s linear forwards;
+}
+  @keyframes draw{
+      to {
+          stroke-dashoffset: 0;
+      }
+  }

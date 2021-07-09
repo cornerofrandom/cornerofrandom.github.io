@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=IBM Plex Mono");
+@import url("https://fonts.googleapis.com/css?family=Shippori Mincho");
+@import url("https://fonts.googleapis.com/css?family=Crimson Text");
+
+@media only screen and (max-width:500px) {
+  #main{
+    display: none;
+  }
+  #magicInfo{
+    display: none;
+  }
+  .website{
+    display: none !important;
+  }
+  #tooSmall{
+    opacity: 1;
+    color: white;
+    font-size: 25px;
+    display:inline-flex;
+    text-align: center;
+    vertical-align: center;
+  }
+}
+@media screen and (max-device-width:500px){
+.website{
+  display: none !important;
+}
+  #tooSmall{
+    opacity: 1;
+    color: white;
+    font-size: 5em;
+    display:inline-flex;
+    text-align: center;
+    vertical-align: center;
+  }
+}
+@media screen and ( max-device-height:500px){
+  .website{
+    display: none !important;
+  } #tooSmall{    opacity: 1;
+    color: white;
+    display:inline-flex;
+    text-align: center;
+    vertical-align: center;
+    font-size: 2em;
+  }
+}
+.understandingArysia { position:relative;height: auto; width:75%; z-index: 2; top: -50px; min-width: 350px;}
+#arysia { position:relative; float:center; top: 20px;}
+
+#main{
+  width: 70%;
+  max-width: 600px;
+  color: #9b948b;
+  font-family: 'Crimson Text', 'Times New Roman', Times, serif;
+}
+.active{
+  display: block;
+  opacity: 1;
+}
+.inactive{
+  display: none;
+  opacity: 0;
+}
+div {
+  transition: opacity 1s;
+}
+.text {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  color: #9b948b;
+  font-size:16px;
+  /*margin-top: 60px;*/
+  font-family: 'Crimson Text', 'Times New Roman', Times, serif;
+}
+
+#magic{
+  width: 60px;
+  height: auto;
+}
+.imgLink{
+  
+  width: 60px;
+  height: auto;
+  opacity: 0.5;
+  transition: ease-in-out 0.2s;
+}
+.imgLink:hover{
+  opacity: 1;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+.linkContainer{
+  background-color: blue;
+  width: 90%;
+}
+#magicInfo{
+  width: 70%;
+  max-width: 600px;
+  color: #9b948b;
+  padding-top: 55px;
+  transition: opacity 1s;
+  top: -20px;
+}
+p {
+  position: relative;
+  top: -60px;
+  font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+}
+.title {
+  font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+#challenge{
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace !important;
+  color: #9b948b;
+  float: center;
+  width: 70%;
+  max-width: 600px;
+  margin-top: 60px;
+}
+#editor{
+  border-bottom: 1px solid #9b948b;
+  width: 200px;
+  outline: 0px solid transparent;
+}
+
+svg{
+  position: relative;
+}
+#magicSvg{
+  top: -40px;
+}
+body {
+  background-image: linear-gradient(#666353 0%, #313131 100%); 
+}
+.n {
+    stroke-dasharray: 19.339160919189453;
+    stroke-dashoffset: 19.339160919189453;
+    animation: u 0.5s linear forwards;
+  }
+
+  .u{
+    stroke-dasharray: 19.339160919189453;
+    stroke-dashoffset: 19.339160919189453;
+    animation: u 0.5s linear forwards;
+  }
+
+  .d {
+    stroke-dasharray: 19.339160919189453;
+    stroke-dashoffset: 19.339160919189453;
+    animation: u 0.7s linear forwards;
+  }
+  
+  .e {
+    stroke-dasharray: 19.339160919189453;
+    stroke-dashoffset: 19.339160919189453;
+    animation: u 1s linear forwards;
+  }
+
+  .r {
+    stroke-dasharray: 19.339160919189453;
+    stroke-dashoffset: 19.339160919189453;
+    animation: u 0.7s linear forwards;
+  }
+
+  .s {
+    stroke-dasharray: 19.339160919189453;
+    stroke-dashoffset: 19.339160919189453;
+    animation: u 0.7s linear forwards;
+  }
+
+  .t {
+    stroke-dasharray: 19.339160919189453;
+    stroke-dashoffset: 19.339160919189453;
+    animation: u 0.7s linear forwards;
+  }
+
+  .a {
+    stroke-dasharray: 19.339160919189453;
+    stroke-dashoffset: 19.339160919189453;
+    animation: u 0.7s linear forwards;
+  }
+  .i,.g {
+    stroke-dasharray: 19.339160919189453;
+    stroke-dashoffset: 19.339160919189453;
+    animation: u 0.7s linear forwards;
+  }
+
+  .longArc {
+    stroke-dasharray: 182.0171356201172;
+    stroke-dashoffset: 182.0171356201172;
+    animation: u 1.7s linear forwards;
+  }
+  .aSlant{
+    stroke-dasharray: 26.727764129638672;
+    stroke-dashoffset: 26.727764129638672;
+    animation: u 1.2s linear forwards;
+  }
+
+  .rVert{
+    stroke-dasharray: 25.786026000976562;
+    stroke-dashoffset: 25.786026000976562;
+    animation: u 1.2s linear forwards;
+  }
+
+  .rSlant{
+    stroke-dasharray: 12.33564281463623;
+    stroke-dashoffset: 12.33564281463623;
+    animation: u 1.2s linear forwards;
+  }
+  .yVert{
+    stroke-dasharray: 9.37838077545166;
+    stroke-dashoffset: 9.37838077545166;
+    animation: u 1.2s linear forwards;
+  }
+
+  .ySlant{
+    stroke-dasharray: 19.744388580322266;
+    stroke-dashoffset: 19.744388580322266;
+    animation: u 0.5s linear forwards;
+  }
+
+  .aHori{
+    stroke-dasharray: 13.141805648803711;
+    stroke-dashoffset: 13.141805648803711;
+    animation: u 1s linear forwards;
+  }
+
+  .largeS{
+    stroke-dasharray: 77.8324203491211;
+    stroke-dashoffset: 77.8324203491211;
+    animation: u 1.2s linear forwards;
+  }
+
+  .largeI {
+    stroke-dasharray: 24.000810623168945;
+    stroke-dashoffset: 24.000810623168945;
+    animation: u 1.2s linear forwards;
+  }
+
+  .largeA {
+    stroke-dasharray: 51.8558349609375;
+    stroke-dashoffset: 51.8558349609375;
+    animation: u 1.2s linear forwards;
+  }
+
+  .largeADash {
+    stroke-dasharray: 20.38779067993164;
+    stroke-dashoffset: 20.38779067993164;
+    animation: u 1s linear forwards;
+  }
+  @keyframes u {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
