@@ -19,7 +19,6 @@ function checkVisitor(){
     if (storageAvailable("localStorage")) {
         pass = window.localStorage.getItem("Arysia_KEY");
         if (pass === "PASSED"){
-            window.alert("PASS")
             challenge.className="inactive";
             checkPage();
             //window.alert("Welcome back.");
@@ -29,7 +28,6 @@ function checkVisitor(){
 function checkPage(){
     if(window.location.hash){
         var hash = window.location.hash;
-        window.alert(hash);
         if (hash === "#magicInfo"){
             window.alert("magic")
             main.classList.add("inactive");
@@ -42,7 +40,6 @@ function checkPage(){
         }
         }
         else {
-            window.alert("MAIN")
             main.classList.add("active");
             main.classList.remove("inactive");
     }
@@ -76,3 +73,14 @@ document.getElementById("editor").addEventListener("input", function() {
 
 }, false);
 5
+
+
+
+
+
+
+
+
+
+
+
