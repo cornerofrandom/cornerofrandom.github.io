@@ -17,6 +17,7 @@ function checkVisitor(){
         if (pass === "PASSED"){
             document.getElementById("challenge").className = "inactive";
             document.getElementById("main").className = "active";
+            checkPage();
             //window.alert("Welcome back.");
         }
     }
@@ -41,5 +42,22 @@ document.getElementById("editor").addEventListener("input", function() {
         }
     } else{
         document.getElementById("edited").innerHTML = "";
+
+        checkPage();
     }
+
 }, false);
+5
+function checkPage(){
+    if(window.location.hash){
+        var hash = window.location.hash.substring(1);
+        if (hash === "magicInfo"){
+            document.getElementById("main").className="inactive";
+            document.getElementById("magicInfo").className="active";
+        }
+        else {
+            document.getElementById("challenge").className = "inactive";
+            document.getElementById("main").className = "active";
+        }
+    }
+}
