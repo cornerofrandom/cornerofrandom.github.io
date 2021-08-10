@@ -16,34 +16,21 @@ function storageAvailable(type) {
     }
 }
 function checkVisitor(){
+
     if (storageAvailable("localStorage")) {
         pass = window.localStorage.getItem("Arysia_KEY");
         if (pass === "PASSED"){
             challenge.className="inactive";
             checkPage();
+            var x = document.lastModified;
+            document.getElementById("lastMod").innerHTML="last modified " + x;
+            window.alert("x");
             //window.alert("Welcome back.");
         }
     }
+
 }
-function checkPage(){
-    if(window.location.hash){
-        var hash = window.location.hash;
-        if (hash === "#magicInfo"){
-            window.alert("magic")
-            main.classList.add("inactive");
-            main.classList.remove("active");
-            magicInfo.classList.add("active");
-            magicInfo.classList.remove("inactive");
-        } else {
-            main.classList.add("active");
-            main.classList.remove("inactive");
-        }
-        }
-        else {
-            main.classList.add("active");
-            main.classList.remove("inactive");
-    }
-}
+
 
 document.getElementById("editor").addEventListener("input", function() {
 

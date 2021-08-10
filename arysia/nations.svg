@@ -2,8 +2,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="23.921221"
-   height="22.250706"
+   width="30mm"
+   height="30mm"
    viewBox="0 0 6.3291559 5.8871655"
    version="1.1"
    id="svg3381"
@@ -50,13 +50,13 @@
      id="layer2"
      inkscape:label="Layer 2"
      transform="translate(-0.58521026,-0.97295656)">
-    <path
+    <path class="triangle"
        id="path1974"
        style="fill:none;fill-rule:evenodd;stroke:#dcd7cf;stroke-width:0.423162px;stroke-miterlimit:4;stroke-dasharray:none"
        inkscape:transform-center-x="-0.61016593"
        transform="matrix(0.17713914,0,0,0.19838196,1.7713774,2.3942901)"
-       d="M 21.232042,7.6043839 10.898362,13.570537 0.56468201,19.53669 V 7.6043836 -4.3279221 L 10.898362,1.6382311 Z" />
-    <path
+      d="M 21.232042,7.6043839 10.898362,13.570537 0.56468201,19.53669 V 7.6043836 -4.3279221 L 10.898362,1.6382311 Z" />
+    <!--right side--><path class="triangle" 
        id="path1974-3"
        style="fill:none;fill-rule:evenodd;stroke:#dcd7cf;stroke-width:0.423162px;stroke-miterlimit:4;stroke-dasharray:none"
        inkscape:transform-center-x="0.6101667"
@@ -77,16 +77,16 @@
        d="M 1.8568295,2.4129045 C 0.21762627,2.4798226 0.27758547,5.3497574 1.8396532,5.444965"
        id="path5432"
        sodipodi:nodetypes="cc" />
-    <path
+    <path class="circle"
        id="path5456"
        style="fill:none;fill-rule:evenodd;stroke:#dcd7cf;stroke-width:0.11191875;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 3.9856364,1.8571672 a 0.26164904,0.30698007 0 0 1 -0.2616491,0.3069801 0.26164904,0.30698007 0 0 1 -0.261649,-0.3069801 0.26164904,0.30698007 0 0 1 0.261649,-0.30698 0.26164904,0.30698007 0 0 1 0.2616491,0.30698 z" />
-    <path
+    <path class="pointyCurve"
        style="fill:none;stroke:#dcd7cf;stroke-width:0.08191875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 2.6101752,5.8215254 c 0.349884,0.459162 0.5898926,0.6305862 1.102917,0.9630718 C 4.2727761,6.4691643 4.5403637,6.2369256 4.8879969,5.8093906"
        id="path5975"
        sodipodi:nodetypes="ccc" />
-    <path
+    <path class="circle"
        id="ellipse5977"
        style="fill:none;fill-rule:evenodd;stroke:#dcd7cf;stroke-width:0.11191875;stroke-miterlimit:4;stroke-dasharray:none"
        transform="scale(1,-1)"

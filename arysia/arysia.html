@@ -1,8 +1,9 @@
 <link rel="stylesheet" href="text.css">
-<link rel="stylesheet" href="animate2.css">
+<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<body onload="checkVisitor()">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body onload="checkPage()">
    <p id="length1"></p>
 
    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -194,31 +195,28 @@
 
          <div class="text">
             <p id="first">Welcome, traveler, to the world of Arysia.</p>
-            <p><em>There may not be much to explore now, as content is still being added as this website expands.
-                  If you return later, there may yet be more for you to explore.</em>
+            <p>Fear not the unknown, for it is simply something new waiting to be discovered.</p>
+            <p><em>There may not be much to see now, but should you choose to return in the future, there may yet be more for you to explore.</em>
             </p>
-               <!--<div class="col-xs-4 col-sm-4 col-md-4">-->
-                  <div>
-                     <a href="#magicInfo"  style="left:0;"><img src="magicLight.svg" class="imgLink" onclick="displayMagicInfo();"></a>
-                  </div>
-               <!--</div>-->
-
-               <!--<div class="col-xs-4 col-sm-4 col-md-4">
-                  <a href="#nationsInfo"><img src="nations.svg" class="imgLink" onclick="displayNationsInfo();"></a>
-               </div>
 
                <div class="col-xs-4 col-sm-4 col-md-4">
-               
-               </div> -->
+                  <a href="#nationsInfo"><img src="nations.svg" class="imgLink" onclick="changeActive('main', 'nationsInfo');"></a>
+               </div>
+               <div class="col-xs-4 col-sm-4 col-md-4">
+                  <a href="#magicInfo"  style="left:0;"><img src="magicLight.svg" class="imgLink" onclick="changeActive('main', 'magicInfo');"></a>
+               </div>
+               <div class="col-xs-4 col-sm-4 col-md-4">
+                  <a href="#housesInfo"  style="left:0;"><img src="houses.svg" class="imgLink" onclick="changeActive('main', 'housesInfo');"></a>
+               </div>
          </div>
 
       </div>
       <div id="tooSmall" class="inactive">
-        Your screen is too small! <br><br> This website is optimized for large screens (computers and tablets). A mobile-friendly version is still under development.
+        Your screen is too small :(<br><br> This website is optimized for large screens (computers and tablets). A mobile-friendly version is still under development.
          <br><br> Thanks for your visit. If you'd like to explore, please use a larger screen. <br>&lt;3
       </div>
-      <div id="magicInfo" class="inactive website">
-         <svg 
+      <div id="magicInfo" class="inactive website info">
+         <svg class="nonTitle"
          width="25mm"
          height="30mm"
          viewBox="0 0 30 30"
@@ -402,42 +400,280 @@
                   </p>
                </div>
             </div>
-            <a href="#"><img src="arysia.svg" class="imgLink" onclick="displayHome();"></a>
+            <a href="#"><img src="arysia.svg" class="imgLink" onclick="changeActive(currentPage, 'main');"></a>
         </div>
           </div>
-          <div id="nationsInfo" class="inactive website">
+            <div id="nationsInfo" class="inactive website info">
+            <div class="text">   
             
-            <!--COPY AND PASTE SVG HERE-->
-            <div class="text">
-               <p class="title">Arysian Nations</p>
-               <p>There are six Arysian nations, scattered across the continent.</p>
-               <div class="col-xs-6 col-sm-6 col-md-6">
-                  <div style="float: right; text-align: right;">
-                     <p class="title">Allenora</p>
-                     <p>flmsld
-                     </p>
-                  </div>
-               </div>
-               <div class="col-xs-6 col-sm-6 col-md-6">
-                  <div style="float: left; text-align: left;">
-                     <p class="title">Firin</p>
-                     <p>asdfiapsdhf;oais
-                     </p>
-                  </div>
-               </div>
-               <a href="#"><img src="arysia.svg" class="imgLink" onclick="displayHome();"></a>
-           </div>
-             </div>
+                     <svg 
+                     width="17mm"
+                     height="17mm"
+                     viewBox="0 0 6.3291559 5.8871655"
+                     version="1.1"
+                     id="nationsSvg"
+                     inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+                     sodipodi:docname="nations.svg"
+                     inkscape:export-filename="C:\Users\17342\Desktop\cornerofrandom\animations\arysia\path1974.png"
+                     inkscape:export-xdpi="4013.1733"
+                     inkscape:export-ydpi="4013.1733"
+                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:svg="http://www.w3.org/2000/svg">
+                     <sodipodi:namedview
+                     id="namedview3383"
+                     pagecolor="#ffffff"
+                     bordercolor="#666666"
+                     borderopacity="1.0"
+                     inkscape:pageshadow="2"
+                     inkscape:pageopacity="0.0"
+                     inkscape:pagecheckerboard="0"
+                     inkscape:document-units="mm"
+                     showgrid="false"
+                     showguides="false"
+                     width="30mm"
+                     inkscape:zoom="11.284816"
+                     inkscape:cx="8.1082401"
+                     inkscape:cy="13.912499"
+                     inkscape:window-width="1482"
+                     inkscape:window-height="1030"
+                     inkscape:window-x="204"
+                     inkscape:window-y="56"
+                     inkscape:window-maximized="0"
+                     inkscape:current-layer="layer2"
+                     units="mm"
+                     fit-margin-top="0"
+                     fit-margin-left="0"
+                     fit-margin-right="0"
+                     fit-margin-bottom="0" />
+                     <defs
+                     id="defs3378" />
 
-      <div id="challenge">
-         <p>You are trying to access something that is not yet available to the public. What have you to say for
-            yourself?</p>
-         <p contenteditable id="editor"></p>
-         <p id="edited"></p>
-      </div>
-      <script src="checkPass.js"></script>
+                     <g
+                     inkscape:groupmode="layer"
+                     id="layer2"
+                     inkscape:label="Layer 2"
+                     transform="translate(-0.58521026,-0.97295656)">
+                     <path class="triangle"
+                        id="path1974"
+                        style="fill:none;fill-rule:evenodd;stroke:#dcd7cf;stroke-width:0.423162px;stroke-miterlimit:4;"
+                        inkscape:transform-center-x="-0.61016593"
+                        transform="matrix(0.17713914,0,0,0.19838196,1.7713774,2.3942901)"
+                        d="M 21.232042,7.6043839 10.898362,13.570537 0.56468201,19.53669 V 7.6043836 -4.3279221 L 10.898362,1.6382311 Z" />
+                     <!--right side--><path class="triangle" 
+                        id="path1974-3"
+                        style="fill:none;fill-rule:evenodd;stroke:#dcd7cf;stroke-width:0.423162px;stroke-miterlimit:4;"
+                        inkscape:transform-center-x="0.6101667"
+                        transform="matrix(-0.17713914,0,0,0.19838196,5.7052191,2.3942901)"
+                        d="M 21.232042,7.6043839 10.898362,13.570537 0.56468201,19.53669 V 7.6043836 -4.3279221 L 10.898362,1.6382311 Z" />
+                     <path class="curve"
+                        style="fill:none;stroke:#dcd7cf;stroke-width:0.09191875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+                        d="m 5.6427471,2.4129045 c 1.6392033,0.066918 1.5792441,2.9368529 0.017176,3.0320605"
+                        id="path2312"
+                        sodipodi:nodetypes="cc" />
+                     <path class="pointyCurve"
+                        style="fill:none;stroke:#dcd7cf;stroke-width:0.09191875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+                        d="M 2.5852563,2.0115537 C 2.9351402,1.5523918 3.1751489,1.3809676 3.6881732,1.048482 4.2478571,1.3639148 4.5154447,1.5961535 4.863078,2.0236885"
+                        id="path3653"
+                        sodipodi:nodetypes="ccc" />
+                     <path class="curve"
+                        style="fill:none;stroke:#dcd7cf;stroke-width:0.09191875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+                        d="M 1.8568295,2.4129045 C 0.21762627,2.4798226 0.27758547,5.3497574 1.8396532,5.444965"
+                        id="path5432"
+                        sodipodi:nodetypes="cc" />
+                     <path class="circle"
+                        id="path5456"
+                        style="fill:none;fill-rule:evenodd;stroke:#dcd7cf;stroke-width:0.11191875;stroke-miterlimit:4;"
+                        d="m 3.9856364,1.8571672 a 0.26164904,0.30698007 0 0 1 -0.2616491,0.3069801 0.26164904,0.30698007 0 0 1 -0.261649,-0.3069801 0.26164904,0.30698007 0 0 1 0.261649,-0.30698 0.26164904,0.30698007 0 0 1 0.2616491,0.30698 z" />
+                     <path class="pointyCurve"
+                        style="fill:none;stroke:#dcd7cf;stroke-width:0.08191875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+                        d="m 2.6101752,5.8215254 c 0.349884,0.459162 0.5898926,0.6305862 1.102917,0.9630718 C 4.2727761,6.4691643 4.5403637,6.2369256 4.8879969,5.8093906"
+                        id="path5975"
+                        sodipodi:nodetypes="ccc" />
+                     <path class="circle"
+                        id="ellipse5977"
+                        style="fill:none;fill-rule:evenodd;stroke:#dcd7cf;stroke-width:0.11191875;stroke-miterlimit:4;"
+                        transform="scale(1,-1)"
+                        d="m 4.0105557,-5.9759116 a 0.26164904,0.30698007 0 0 1 -0.2616491,0.3069801 0.26164904,0.30698007 0 0 1 -0.261649,-0.3069801 0.26164904,0.30698007 0 0 1 0.261649,-0.3069801 0.26164904,0.30698007 0 0 1 0.2616491,0.3069801 z" />
+                     </g>
+                     </svg>            
+               <div id="nationsText">
+                  <div class="row">
+                  <p class="title">Arysian Nations</p>
+                  <p>There are six Arysian nations, scattered across the continent.</p>
+                     <div class="clearfix col-xs-6 col-sm-4 col-md-4">
+
+                        <p class="title">Elryn</p>
+                        <p class="colText">A nation set in the mountains at fairly high altitude. Officially, they are represented by a High Priest. Often considered the most advanced and “high-class” of the Arysian realms. Capital: Riva
+
+                        </p>
+                     </div>
+                     <div class="col-xs-6 col-sm-4 col-md-4">
+                           <p class="title">Arettus</p>
+                           <p class="colText">A republic set at the base of the Arettes mountains. Led by a council of delegated leaders representing each of the working classes in Arettus. Trades minerals from the surrounding mountains. Capital: Arisande
+
+                           </p>
+                     </div>
+                     <div class="col-xs-6 col-sm-4 col-md-4">
+                           <p class="title">Kannis</p>
+                           <p class="colText">A kingdom built in a valley in the Rysin mountain range, Kannis is a monarchy led by the Relanen Clan. A farming and mining country that also specializes in battle training. Capital: Irilen
+                           </p>
+                     </div>
+                     <div class="clearfix visible-sm-block"></div>
+                     <div class="clearfix visible-md-block"></div>
+                     <div class="clearfix visible-lg-block"></div>
+                     <div class="col-xs-6 col-sm-4 col-md-4">
+                        <p class="title">Onirus</p>
+                        <p class="colText">A kingdom similar to Venice, where most cities have canals and residents travel by boat. Thriving produce industry. Capital: Daeciin
+                        </p>
+                     </div>
+                     <div class="clearfix visible-xs-block"></div>
+                     <div class="col-xs-6 col-sm-4 col-md-4">
+                           <p class="title">Sorelle</p>
+                           <p class="colText">A temperate landscape set on the plains. Ruled by the House of Evin. Mostly sustains the kingdoms through farming. Capital: Mirinelle
+                           </p>
+                     </div>
+         
+                     <div class="col-xs-6 col-sm-4 col-md-4">
+                           <p class="title">Viri</p>
+                           <p class="colText">An island that is not technically a nation. Entry is strictly regulated by the Firin. Not much is known about it. Capital: Lavra
+                           </p>
+                     </div>
+                  </div>
+                  </div>
+                  <div class="row">
+
+                     <div class="col-xs-12 col-sm-12 col-md-12">
+                        <a href="#"><img src="arysia.svg" class="imgLink" onclick="changeActive(currentPage, 'main');"></a>
+                     </div>
+
+                  </div>
+                 
+                  
+            </div>
+              
+         </div>
+
+         <div id="housesInfo" class="inactive website info">
+            <div class="text">   
+            
+                     
+<svg
+width="18mm"
+height="18mm"
+viewBox="0 0 30 30"
+version="1.1"
+id="housesSvg"
+inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+sodipodi:docname="houses.svg"
+inkscape:export-filename="C:\Users\17342\Downloads\magic.png"
+inkscape:export-xdpi="96"
+inkscape:export-ydpi="96"
+xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:svg="http://www.w3.org/2000/svg">
+<sodipodi:namedview
+  id="namedview7"
+  pagecolor="#ffffff"
+  bordercolor="#666666"
+  borderopacity="1.0"
+  inkscape:pageshadow="2"
+  inkscape:pageopacity="0.0"
+  inkscape:pagecheckerboard="0"
+  inkscape:document-units="mm"
+  showgrid="false"
+  width="30mm"
+  inkscape:zoom="3.5125763"
+  inkscape:cx="44.838884"
+  inkscape:cy="78.574806"
+  inkscape:window-width="1482"
+  inkscape:window-height="1030"
+  inkscape:window-x="18"
+  inkscape:window-y="8"
+  inkscape:window-maximized="0"
+  inkscape:current-layer="layer1"
+  showguides="false" />
+<defs
+  id="defs2">
+ <linearGradient
+    id="linearGradient1232"
+    inkscape:swatch="solid">
+   <stop
+      style="stop-color:#dcd7cf;stop-opacity:1;"
+      offset="0"
+      id="stop1230" />
+ </linearGradient>
+</defs>
+<g
+  inkscape:label="Layer 1"
+  inkscape:groupmode="layer"
+  id="layer1">
+ <path class="hRhombus"
+    id="rect1228-7"
+    style="fill:none;fill-rule:evenodd;stroke:#dcd7cf;stroke-width:0.423"
+    d="M 8.0272865,7.9741516 19.383263,11.080222 22.716607,22.663472 10.830326,19.557401 Z"
+    sodipodi:nodetypes="ccccc" />
+ <path class="hMidline"
+    style="fill:none;stroke:#dcd7cf;stroke-width:0.423;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;"
+    d="M 8.0272865,7.9741516 22.716606,22.663471 v 0"
+    id="path1787" />
+ <path class="hCircle"
+    id="path3521"
+    style="fill:none;fill-rule:evenodd;stroke:#dcd7cf;stroke-width:0.423"
+    d="m 15.900164,9.5377865 a 7,7 0 0 1 -7.0000003,6.9999995 7,7 0 0 1 -7,-6.9999995 7,7 0 0 1 7,-7 7,7 0 0 1 7.0000003,7 z" />
+ <path class="hCircle"
+    id="path3521-8"
+    style="fill:none;fill-rule:evenodd;stroke:#dcd7cf;stroke-width:0.423"
+    d="m 27.823139,21.334818 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-7 7,7 0 0 1 7,7 z" />
+ <path class="hRectangle"
+    id="rect3664"
+    style="fill:none;fill-rule:evenodd;stroke:#dcd7cf;stroke-width:0.449201"
+    d="M 2.8790954,21.165177 20.842368,3.201904 27.115414,9.4749495 9.1521409,27.438222 Z" />
+</g>
+</svg>
+
+               <div id="nationsText" >
+                  <div class="row">
+                  <p class="title">Firin Houses</p>
+                  <p>There are three Firin Houses, each with its own branch in every nation. The headquarters of all three houses are based on Viri, where their jurisdiction is strongest.</p>
+                     <div class="clearfix col-xs-4 col-sm-4 col-md-4">
+
+                        <p class="title">Ameris</p>
+                        <p class="colText">Founded by Syliva Asterin Amersalles, House Ameris focuses on control and resistance (elements of earth, air, water, skills relating to healing). Members of this house are known as the "Following of Freedom".
+
+                        </p>
+                     </div>
+                     <div class="col-xs-4 col-sm-4 col-md-4">
+                           <p class="title">Fira</p>
+                           <p class="colText">Founded by Dianne Fira, House Fira focuses on both offensive and defensive techniques (elements of fire, ice, water, skills relating to shielding and heartrending). This house is known as the "Following of Honor".
+
+                           </p>
+                     </div>
+                     <div class="col-xs-4 col-sm-4 col-md-4">
+                           <p class="title">Syvanis</p>
+                           <p class="colText">Founded by Lynk Eirin-Syvanastria, House Syvanis focuses purely on stealth offensive. It is the most difficult House to finish training in. House Syvanis is considered the "Following of Balance".
+                           </p>
+                     </div>
+                     </div>
+                    
+
+                     <div class="col-xs-12 col-sm-12 col-md-12">
+                        <a href="#"><img src="arysia.svg" class="imgLink" onclick="changeActive(currentPage, 'main');"></a>
+                     </div>
+
+                  </div>
+                 
+                  
+            </div>
+              
+         </div>
       <script src="display.js"></script>
 
 
    </center>
+   <!--<p id="lastMod">-->
+
+   </p>
 </body>
