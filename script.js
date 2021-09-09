@@ -21,6 +21,9 @@ function unrh(){
     document.getElementById("unrb").style.display = "block";
 }
 
+function sqircleClick(){
+    window.alert("you clicked the sqircle !!");
+}
 
 function alrt(){
     alert("ATTENTION: you are entering a corner of random. Beware of extreme levels of randomness. You have been warned...")
