@@ -6,6 +6,7 @@ body{
 .outline{
     text-align:left;
     width:80%;
+    margin: auto;
 }
 .userinput{
     font-family: monospace;
