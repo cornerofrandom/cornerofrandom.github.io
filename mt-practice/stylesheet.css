@@ -1,6 +1,10 @@
 body{
     font-size:16px;
     align:center;
+    /*width:80%;*/
+}
+.outline{
+    text-align:left;
     width:80%;
 }
 .userinput{
