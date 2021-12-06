@@ -22,7 +22,18 @@ function newQuestion(){
         //"501 admissibility of communication",
         "602 lack of personal knowledge",
         "608(a) opinion and reputation of witness character",
-        "another rule lmao"
+        "701 opinion testimony of lay witness",
+        "702 testimony by experts",
+        "703 bases of opinion testimony by experts",
+        "704 opinion on ultimate issue",
+        "705 disclosure of facts of data underlying expert opinion",
+        "801 hearsay",
+        "801d(1) prior statements by witness",
+        "801d(2) admission by party opponent",
+        "803(1) present sense impression",
+        "803(2) excited utterance",
+        "803(3) then existing mental, emotional, or physical conditions",
+        "805 hearsay within hearsay"
         //"611(a) badgering the witness/compound question"
     ];
     let len = names.length;
@@ -44,7 +55,18 @@ function getText(){
         "measures taken after an event occurs that may have made the event less likely are not admissible to prove negligence",
         "a witness may only testify to their rationally based perceptions",
         "evidence of truthful character is admissible only after the witness's character for truthfulness has been attacked",
-        "idk lmao"
+        "a witness may give opinions or inferences based on their rationally based perceptions",
+        "an expert witness must demonstrate skill, knowledge, education, experience, or training in order to testify in the form of an opinion or otherwise if the testimony is based upon sufficient facts or data, the testimony is the product of reliable principles and methods, and the witness has applied the principles and methods reliably to the facts of the case",
+        "the facts or data upon which an expert bases an inference need not be admitted",
+        "an opinion is not objectionable just because it embraces an ultimate issue unless an expert is testifying to the mental state or condition of a defendant in a criminal case",
+        "an expert witness may testify to a matter without necessarily saying the specific basis of their conclusion",
+        "an out of court statement brought in court to prove the truth of the matter asserted is inadmissible",
+        "the prior statements made by a witness are not hearsay if they are 1) inconsistent with declarant's testimony 2) identifies a person as someone the declarant perceived earlier",
+        "statements made by the defendant (part opponent) or representative are not hearsay",
+        "803-1",
+        "803-2",
+        "803-3",
+        "805"
     ];
     index = document.getElementById("index").innerHTML;
 
