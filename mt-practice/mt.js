@@ -62,7 +62,7 @@ function getText(){
         "an expert witness may testify to a matter without necessarily saying the specific basis of their conclusion",
         "an out of court statement brought in court to prove the truth of the matter asserted is inadmissible",
         "the prior statements made by a witness are not hearsay if they are 1) inconsistent with declarant's testimony 2) identifies a person as someone the declarant perceived earlier",
-        "statements made by the defendant (part opponent) or representative are not hearsay",
+        "statements made by the defendant (party opponent) or representative are not hearsay",
         "statements made while perceiving an event or immediately thereafter are not considered hearsay",
         "statements relating to the event made while the declarant was under the stress or excitement caused by the event are not hearsay",
         "a statement of the declarant's then-existing state of mind, emotion, sensation, or physical condition, but not including a statement of memory or belief to prove the fact remembered or believed is admissible",
@@ -86,7 +86,7 @@ function getText(){
         resultDiv.innerHTML="nice work!";
         document.getElementById("correction").style.display='none';
     } else{
-        resultDiv.innerHTML="<span style='color:orange;'>not quite... you'll get it next time!</span>";
+        resultDiv.innerHTML="<span style='color:orange;'>not quite... </span>";
         document.getElementById("correction").style.display='block';
     }
     newQuestion()
