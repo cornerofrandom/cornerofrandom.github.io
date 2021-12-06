@@ -1,6 +1,5 @@
 body{
-    font-family:monospace;
-    font-size:16px;
+    font-size:14px;
 }
 .userinput{
     font-size:12px;
@@ -25,4 +24,8 @@ body{
 #in:focus{
     outline:none;
     border-bottom:3px solid lightblue;
+}
+#correctAnswer{
+    font-size:12px;
+    font-family: monospace;
 }
