@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mock Trial Practice Site</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body onload="newQuestion()">
+        <script src="mt.js"></script>
+        <p>***attention: please be aware that the program may mark you wrong if you make small punctuation errors***</p>
+        <p class='label'>Type the definition for rule:</p>
+        <p id="rule" class='change'></p>
+        <p id="index" style='display: none'></p>
+        <div contenteditable id="in" class='userinput'></div>
+        <div style='height:5px;'></div>
+        <button onclick="getText()">submit</button>
+        <div id='previous'>
+            <p class='label'>Previous question:</p>
+            <p class='label'>You said:</p>
+            <p id="userSaid" class='userinput'>N/A</p>
+            <div id="correction" style='display:none;'>
+                <p class='label'>Correct answer:</p>
+                <p id="correctAnswer" class='change'></p>
+            </div>
+    
+            <p id="feedback" class='change'></p>
+        </div>
+
+    </body>
+</html>
