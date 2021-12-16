@@ -36,6 +36,7 @@ function newQuestion(){
         "805 hearsay within hearsay"
         //"611(a) badgering the witness/compound question"
     ];
+    index= document.getElementById("index").innerHTML;
     let len = names.length;
     index=(index+1)%len
     document.getElementById("rule").innerHTML=names[index];
