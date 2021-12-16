@@ -37,7 +37,7 @@ function newQuestion(){
         //"611(a) badgering the witness/compound question"
     ];
     let len = names.length;
-    index+=1;
+    index=(index+1)%len
     document.getElementById("rule").innerHTML=names[index];
     document.getElementById("index").innerHTML=index;
 }
