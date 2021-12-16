@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mock Trial Practice Site</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body onload="newQuestion()">
+        <div class='outline'>
+        <script src="mt2.js"></script>
+        <p>***attention: please be aware that the program may mark you wrong if you make small punctuation errors***</p>
+          <p><a href='./index.html'>randomized practice site</a> <br> (this site will go in order and loop back once you have gone through all of the rules)</p>
+        <p>*hint: do not include anything with parenthesis*</p>
+        <p class='label'>Type the definition for rule:</p>
+        <p id="rule" class='change'></p>
+        <p id="index" style='display: none'></p>
+        <div contenteditable id="in" class='userinput'></div>
+        <div style='height:5px;'></div>
+        <button onclick="getText()">submit</button>
+        <div id='previous'>
+            <p class='label'>Previous question:</p>
+            <p class='label'>You said:</p>
+            <p id="userSaid" class='userinput'>N/A</p>
+            <div id="correction" style='display:none;'>
+                <p class='label'>Correct answer:</p>
+                <p id="correctAnswer" class='change'></p>
+            </div>
+    
+            <p id="feedback" class='change'></p>
+        </div>
+        </div>
+    </body>
+</html>
