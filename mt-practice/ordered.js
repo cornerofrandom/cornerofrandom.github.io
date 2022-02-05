@@ -38,7 +38,7 @@ function newQuestion(){
     ];
     index= document.getElementById("index").innerHTML;
     let len = names.length;
-    index=index+1;
+    index=index++;
     if (index>len){index=0};
     document.getElementById("rule").innerHTML=names[index];
     document.getElementById("index").innerHTML=index;
